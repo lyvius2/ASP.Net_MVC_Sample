@@ -1,0 +1,60 @@
+﻿@model WebAppSample.Models.Mountain
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Mountain</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MountainName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MountainName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClimbmingDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClimbmingDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Complete)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Complete)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UpdDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
